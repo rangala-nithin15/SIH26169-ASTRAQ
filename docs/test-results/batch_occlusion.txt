@@ -1,0 +1,24 @@
+preset=occlusion runs=20 duration=15.0s
+seed  state     acq_s  rms_px  loss_%  losses reacq_mean_s reacq_max_s
+ 1000 LOCKED      1.43   4.03   0.00      2   0.03        0.03
+ 1001 LOCKED      1.07   4.19   0.00      2   0.03        0.03
+ 1002 LOCKED      1.10   3.37   0.00      2   0.03        0.03
+ 1003 LOCKED      1.43   3.00   0.00      2   0.03        0.03
+ 1004 LOCKED      1.33   4.14   0.00      2   0.03        0.03
+ 1005 LOCKED      1.37   3.89   0.00      2   0.03        0.03
+ 1006 LOCKED      0.57   4.03   0.00      2   0.03        0.03
+ 1007 LOCKED      1.47   3.60   0.00      2   0.03        0.03
+ 1008 LOCKED      1.40   3.66   0.00      2   0.03        0.03
+ 1009 LOCKED      1.03   3.22   0.00      2   0.03        0.03
+ 1010 LOCKED      0.70   3.58   0.00      2   0.03        0.03
+ 1011 LOCKED      1.17   3.30   0.00      2   0.03        0.03
+ 1012 LOCKED      0.70   3.61   0.00      2   0.03        0.03
+ 1013 LOCKED      0.70   3.51   0.00      2   0.03        0.03
+ 1014 LOCKED      1.53   4.70   0.00      2   0.03        0.03
+ 1015 LOCKED      1.27   3.77   0.00      2   0.03        0.03
+ 1016 LOCKED      1.40   3.01   0.00      2   0.03        0.03
+ 1017 LOCKED      1.40   4.31   0.00      2   0.03        0.03
+ 1018 LOCKED      1.10   3.70   0.00      2   0.03        0.03
+ 1019 LOCKED      1.03   3.97   0.00      2   0.03        0.03
+locked 20/20; acquisition mean 1.16 s, max 1.53 s; RMS error mean 3.73 px
+re-acquisition: 40 events after 40 losses; mean 0.03 s, max 0.03 s, 100% within 1 s

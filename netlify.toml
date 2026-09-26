@@ -1,0 +1,8 @@
+# Netlify: build the static web app from the web/ folder.
+[build]
+  base = "web"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"

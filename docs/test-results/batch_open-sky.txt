@@ -1,0 +1,23 @@
+preset=open-sky runs=20 duration=15.0s
+seed  state     acq_s  rms_px  loss_%  losses reacq_mean_s reacq_max_s
+ 1000 LOCKED      1.43   3.08   0.00      0    -           -  
+ 1001 LOCKED      1.07   3.24   0.00      0    -           -  
+ 1002 LOCKED      1.10   2.95   0.00      0    -           -  
+ 1003 LOCKED      1.43   2.64   0.00      0    -           -  
+ 1004 LOCKED      1.23   3.15   0.00      0    -           -  
+ 1005 LOCKED      1.23   2.75   0.00      0    -           -  
+ 1006 LOCKED      0.57   3.00   0.00      0    -           -  
+ 1007 LOCKED      1.47   3.03   0.00      0    -           -  
+ 1008 LOCKED      1.43   3.30   0.00      0    -           -  
+ 1009 LOCKED      1.03   2.99   0.00      0    -           -  
+ 1010 LOCKED      0.70   2.93   0.00      0    -           -  
+ 1011 LOCKED      1.17   3.13   0.00      0    -           -  
+ 1012 LOCKED      0.70   3.00   0.00      0    -           -  
+ 1013 LOCKED      0.70   2.61   0.00      0    -           -  
+ 1014 LOCKED      1.50   2.70   0.00      0    -           -  
+ 1015 LOCKED      1.17   3.11   0.00      0    -           -  
+ 1016 LOCKED      1.27   2.82   0.00      0    -           -  
+ 1017 LOCKED      1.27   2.86   0.00      0    -           -  
+ 1018 LOCKED      1.10   3.04   0.00      0    -           -  
+ 1019 LOCKED      1.03   3.07   0.00      0    -           -  
+locked 20/20; acquisition mean 1.13 s, max 1.50 s; RMS error mean 2.97 px

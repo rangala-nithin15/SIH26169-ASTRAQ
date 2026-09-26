@@ -1,0 +1,23 @@
+preset=fast-target runs=20 duration=15.0s
+seed  state     acq_s  rms_px  loss_%  losses reacq_mean_s reacq_max_s
+ 1000 LOCKED      1.00  15.48   0.00      0    -           -  
+ 1001 LOCKED      0.77   9.45   0.00      0    -           -  
+ 1002 LOCKED      0.80   9.04   0.00      0    -           -  
+ 1003 LOCKED      2.33   8.10   0.00      0    -           -  
+ 1004 TRACKING    0.73   9.89   0.00      0    -           -  
+ 1005 TRACKING    0.93   9.03   0.00      0    -           -  
+ 1006 TRACKING    0.53  10.70   0.00      0    -           -  
+ 1007 LOCKED      0.93  10.13   0.00      0    -           -  
+ 1008 LOCKED      0.97   9.92   0.00      0    -           -  
+ 1009 LOCKED      0.80  10.26   0.00      0    -           -  
+ 1010 TRACKING    0.63   9.40   0.00      0    -           -  
+ 1011 LOCKED      0.93   9.55   0.00      0    -           -  
+ 1012 LOCKED      0.57   8.44   0.00      0    -           -  
+ 1013 LOCKED      0.60   9.11   0.00      0    -           -  
+ 1014 TRACKING    1.07  10.59   0.00      0    -           -  
+ 1015 LOCKED      2.20   9.42   0.00      0    -           -  
+ 1016 LOCKED      0.87   9.46   0.00      0    -           -  
+ 1017 LOCKED      0.83   9.07   0.00      0    -           -  
+ 1018 LOCKED      0.83   8.77   0.00      0    -           -  
+ 1019 LOCKED      2.30   9.94   0.00      0    -           -  
+locked 20/20; acquisition mean 1.03 s, max 2.33 s; RMS error mean 9.79 px

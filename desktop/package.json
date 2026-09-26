@@ -1,0 +1,20 @@
+{
+  "name": "astraq-desktop",
+  "productName": "ASTRAQ",
+  "version": "1.3.0",
+  "description": "ASTRAQ — Autonomous Spatial Tracking & Alignment for Optical Links (SIH26169) desktop application",
+  "main": "main.js",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "prepare-app": "node copy-dist.js",
+    "start": "npm run prepare-app && electron .",
+    "package:win": "npm run prepare-app && electron-packager . ASTRAQ --platform=win32 --arch=x64 --out=release --overwrite --asar --icon=icon.ico --ignore=\"^/release\" --ignore=\"^/copy-dist.js\"",
+    "package:linux": "npm run prepare-app && electron-packager . ASTRAQ --platform=linux --arch=x64 --out=release --overwrite --asar --ignore=\"^/release\" --ignore=\"^/copy-dist.js\"",
+    "package:mac": "npm run prepare-app && electron-packager . ASTRAQ --platform=darwin --arch=x64,arm64 --out=release --overwrite --asar --ignore=\"^/release\" --ignore=\"^/copy-dist.js\""
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^38.0.0"
+  }
+}

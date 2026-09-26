@@ -1,0 +1,28 @@
+held-out candidates: 109230 (2746 beacon, 106484 other) from 3879 frames
+candidate ROC AUC: hand-tuned confidence 0.9817 | learned verifier 0.9997
+
+frame-level, operating points: hand-tuned conf >= 0.35 | verifier p >= 0.7
+condition (atmosphere | FOV | decoy)   frames  Pd hand    Pd AI  FA hand    FA AI
+ALL                                      3879    89.9%    98.7%    8.40%    0.59%
+clear|narrow|-                            643    97.0%    99.8%    3.27%    0.93%
+clear|narrow|decoy                        257    92.4%   100.0%   13.23%    0.78%
+clear|wide|-                              344    94.2%    99.6%   13.37%    0.87%
+clear|wide|decoy                          136    84.9%    98.9%   20.59%    1.47%
+fog|narrow|-                              293    79.3%    97.8%    2.73%    1.02%
+fog|narrow|decoy                          140    79.4%   100.0%    6.43%    0.71%
+fog|wide|-                                147    63.2%    88.7%   17.01%    0.00%
+fog|wide|decoy                             62    63.2%    89.5%   22.58%    0.00%
+haze|narrow|-                             278    95.4%    99.5%    2.52%    0.00%
+haze|narrow|decoy                         140    95.5%   100.0%    5.71%    0.00%
+haze|wide|-                               139    90.6%    98.1%   10.79%    0.00%
+haze|wide|decoy                            63    85.0%   100.0%   25.40%    1.59%
+low_light|narrow|-                        248    97.4%    99.3%    1.21%    1.21%
+low_light|narrow|decoy                    112    98.6%    98.6%    0.89%    0.00%
+low_light|wide|-                          144    84.0%    98.9%   11.11%    0.00%
+low_light|wide|decoy                       60    75.7%    97.3%   15.00%    1.67%
+rain|narrow|-                             273    96.8%   100.0%    4.40%    0.00%
+rain|narrow|decoy                         157    94.9%    99.2%    8.92%    0.64%
+rain|wide|-                               176    88.8%    97.0%   15.34%    0.00%
+rain|wide|decoy                            67    74.5%   100.0%   19.40%    0.00%
+
+Pd = beacon correctly detected (frames where it is visible); FA = frames with a wrong detection accepted.

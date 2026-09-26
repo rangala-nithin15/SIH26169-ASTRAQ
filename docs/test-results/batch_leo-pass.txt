@@ -1,0 +1,23 @@
+preset=leo-pass runs=20 duration=15.0s
+seed  state     acq_s  rms_px  loss_%  losses reacq_mean_s reacq_max_s
+ 1000 LOCKED      0.97   2.90   0.00      0    -           -  
+ 1001 LOCKED      1.00   2.86   0.00      0    -           -  
+ 1002 LOCKED      0.97   2.75   0.00      0    -           -  
+ 1003 LOCKED      1.00   2.85   0.00      0    -           -  
+ 1004 LOCKED      0.97   2.84   0.00      0    -           -  
+ 1005 LOCKED      1.00   2.82   0.00      0    -           -  
+ 1006 LOCKED      1.00   2.82   0.00      0    -           -  
+ 1007 LOCKED      1.00   2.85   0.00      0    -           -  
+ 1008 LOCKED      1.00   3.03   0.00      0    -           -  
+ 1009 LOCKED      1.00   2.87   0.00      0    -           -  
+ 1010 LOCKED      1.00   2.98   0.00      0    -           -  
+ 1011 LOCKED      1.00   2.71   0.00      0    -           -  
+ 1012 LOCKED      1.00   2.80   0.00      0    -           -  
+ 1013 LOCKED      1.00   2.95   0.00      0    -           -  
+ 1014 LOCKED      0.97   3.01   0.00      0    -           -  
+ 1015 LOCKED      1.00   2.80   0.00      0    -           -  
+ 1016 LOCKED      1.00   2.77   0.00      0    -           -  
+ 1017 LOCKED      0.97   2.72   0.00      0    -           -  
+ 1018 LOCKED      0.97   2.98   0.00      0    -           -  
+ 1019 LOCKED      1.00   2.90   0.00      0    -           -  
+locked 20/20; acquisition mean 0.99 s, max 1.00 s; RMS error mean 2.86 px

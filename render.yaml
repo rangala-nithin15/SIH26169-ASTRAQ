@@ -1,0 +1,15 @@
+# Render Blueprint: optional ASTRAQ FastAPI engine.
+services:
+  - type: web
+    name: astraq-engine
+    runtime: python
+    rootDir: server
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: ASTRAQ_CORS
+        value: "*"

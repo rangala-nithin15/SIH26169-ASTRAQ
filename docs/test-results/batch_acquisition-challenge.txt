@@ -1,0 +1,24 @@
+preset=acquisition-challenge runs=20 duration=15.0s
+seed  state     acq_s  rms_px  loss_%  losses reacq_mean_s reacq_max_s
+ 1000 LOCKED      3.87   3.00   0.00      0    -           -  
+ 1001 LOCKED      3.93   3.16   0.00      0    -           -  
+ 1002 LOCKED      3.77   3.06   0.00      0    -           -  
+ 1003 LOCKED      3.93   2.81   0.30      1   0.03        0.03
+ 1004 LOCKED      3.87   3.11   0.00      0    -           -  
+ 1005 LOCKED      3.87   2.79   0.00      0    -           -  
+ 1006 LOCKED      4.03   2.93   0.61      3   0.07        0.13
+ 1007 LOCKED      3.90   3.07   0.90      1   0.10        0.10
+ 1008 LOCKED      4.07   3.20   0.00      1   0.03        0.03
+ 1009 LOCKED      3.93   3.21   0.60      1   0.07        0.07
+ 1010 LOCKED      3.90   2.89   0.00      0    -           -  
+ 1011 LOCKED      3.83   3.06   0.00      0    -           -  
+ 1012 LOCKED      3.87   3.12   0.00      0    -           -  
+ 1013 LOCKED      3.73   3.45   0.29      1   0.03        0.03
+ 1014 LOCKED      3.77   3.09   0.30      1   0.03        0.03
+ 1015 LOCKED      3.77   3.70   1.48      2   0.08        0.10
+ 1016 LOCKED      3.87   2.99   0.00      0    -           -  
+ 1017 LOCKED      3.80   3.00   0.00      1   0.03        0.03
+ 1018 LOCKED      3.93   2.97   0.30      1   0.03        0.03
+ 1019 LOCKED      3.97   3.01   0.00      1   0.03        0.03
+locked 20/20; acquisition mean 3.88 s, max 4.07 s; RMS error mean 3.08 px
+re-acquisition: 14 events after 14 losses; mean 0.05 s, max 0.13 s, 100% within 1 s

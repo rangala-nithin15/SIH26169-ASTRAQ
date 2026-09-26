@@ -1,0 +1,24 @@
+preset=weak-beacon runs=20 duration=15.0s
+seed  state     acq_s  rms_px  loss_%  losses reacq_mean_s reacq_max_s
+ 1000 LOCKED      1.37   3.78   0.00      0    -           -  
+ 1001 LOCKED      1.30   3.95   0.00      0    -           -  
+ 1002 LOCKED      1.53   3.97   0.00      0    -           -  
+ 1003 LOCKED      1.50   4.02   0.00      1   0.03        0.03
+ 1004 LOCKED      1.33   3.92   0.00      0    -           -  
+ 1005 LOCKED      1.70   4.13   0.00      0    -           -  
+ 1006 LOCKED      0.77   3.92   0.00      1   0.07        0.07
+ 1007 LOCKED      1.40   4.17   0.00      1   0.03        0.03
+ 1008 LOCKED      1.40   4.51   0.00      0    -           -  
+ 1009 LOCKED      1.23   4.39   0.00      1   0.17        0.17
+ 1010 LOCKED      1.00   4.01   0.00      0    -           -  
+ 1011 LOCKED      1.40   4.16   0.00      1   0.07        0.07
+ 1012 LOCKED      0.80   4.32   0.00      0    -           -  
+ 1013 LOCKED      0.73   4.04   0.00      0    -           -  
+ 1014 LOCKED      1.33   4.38   0.00      0    -           -  
+ 1015 LOCKED      1.33   3.91   0.00      0    -           -  
+ 1016 LOCKED      1.60   4.02   0.00      0    -           -  
+ 1017 LOCKED      1.60   3.77   0.00      1   0.07        0.07
+ 1018 LOCKED      1.33   4.35   0.00      1   0.07        0.07
+ 1019 LOCKED      1.20   4.07   0.00      1   0.03        0.03
+locked 20/20; acquisition mean 1.29 s, max 1.70 s; RMS error mean 4.09 px
+re-acquisition: 8 events after 8 losses; mean 0.07 s, max 0.17 s, 100% within 1 s
