@@ -19,8 +19,8 @@ ISRO / Department of Space · Software · Smart Automation, Space Technology
 ![Version](https://img.shields.io/badge/version-1.1-8fdcff)
 ![Tests](https://img.shields.io/badge/tests-102%20passing-2ea44f)
 
-### 🔗 [**Open the live prototype**](https://YOUR-DEPLOYED-LINK.vercel.app) · no install, runs in your browser
-### 💻 [**Download the Windows app**](../../releases/latest) · `ASTRAQ.exe`, works offline
+### 🔗 [**Open the live prototype**](https://sih26169-astraq.vercel.app/) · no install, runs in your browser
+
 
 <br/>
 
@@ -64,22 +64,6 @@ Everything is scored live against ground truth on a **PS169 acceptance card**.
 </tr>
 </table>
 
-### ✨ What makes it different
-
-| | |
-|---|---|
-| 🔭 **Wide-field acquisition** | Scans at 12°, detects, then zooms to the 4° tracking view, like NASA's OPALS terminal. It locks from a random start in **1.1 s on average**; the 4°-only optics need up to 12.7 s. |
-| 🧠 **Kalman on azimuth/elevation** | The filter tracks the target's *real* motion rather than pixel motion, and feeds its velocity forward to the gimbal. That gives **4× lower error** (3.7 px vs 14.9 px, measured). |
-| 🤖 **AI beacon verifier** | A trained neural network (11 → 16 → 8 → 1) checks every bright spot. It raises beacon detection from **89.9 % to 98.7 %** and cuts false detections from **8.4 % to 0.6 %** on 3,879 test frames. In the Weak Beacon scenario, lock time falls from 4.6 s to **1.4 s**. |
-| 🔁 **Fast re-acquisition** | After the beacon is blocked, the tracker keeps following its prediction before searching. Re-acquisition takes **0.03 s** after the beacon reappears (40/40 events). |
-| 🎥 **Real image in the loop** | The camera panel *is* the image the detector processes. It is not a drawing of where the target should be. |
-| 🗣️ **Explainable decisions** | Every state change says why, for example *"6 consecutive misses (coast limit 5)"*. |
-| 🌍 **Physically true 3D** | Real Natural Earth coastlines, a real orbit, and true directions and ranges. Anything exaggerated for visibility is labelled. |
-| ⚡ **Zero setup** | The full simulation runs in a browser Web Worker. An optional Python server runs the same engine. |
-| 🎞️ **Video benchmark in the app** | Upload an MP4/WebM (or use the built-in 2000×2000 stream) and the camera is bypassed. Per-frame centroid log, RMSE, re-acquisition — in the browser or on the server. |
-| 📄 **Automatic performance report** | One click (or **P**) produces an HTML/Markdown report of every PS quantity, for live runs, recordings, batches and videos. |
-| 🌌 **Living near-Earth space** | Two more satellites (Earth-observation SAT-2, data-relay SAT-3) and the ISS fly at real orbital speed; meteors, aurora and the Andromeda galaxy fill the sky. **Fly-to cameras (F)** take you right up to each one, and you can orbit and zoom around any spacecraft. Visual only — none of it enters the sensor image or the results. |
-| 🎨 **Themes and desktop app** | Five colour themes including a projector-friendly Daylight theme, and a Windows `.exe` that runs fully offline. |
 
 ## 📊 Results (measured, not claimed)
 
@@ -151,7 +135,7 @@ Every 1/30 s:
 
 ## 🎮 Try it in 30 seconds
 
-Open the **[live prototype](https://YOUR-DEPLOYED-LINK.vercel.app)**, then:
+Open the **[live prototype](https://sih26169-astraq.vercel.app/)**, then:
 
 | Press | To |
 |---|---|
@@ -212,16 +196,27 @@ Requirements: Node.js 20+ and a WebGL 2 browser; Python 3.11+ only for the optio
 
 ```
 astraq-final-project/
-├── web/                 React + TypeScript app (includes the default engine)
-│   └── src/
-│       ├── core/        simulation core, pure TS: optics, detection, Kalman, PID, state machine, metrics
-│       ├── engine/      Web Worker hosts + message protocol
-│       ├── services/    TelemetryProvider: Local · Remote (WebSocket) · Replay
-│       ├── scene/       3D scene: Earth, sky, truck, satellite, optics overlays
-│       └── hud/         top bar, sensor view, dock, drawers, analysis
-├── desktop/             Electron wrapper → ASTRAQ.exe
-├── server/              optional FastAPI engine (numpy port + MP4 benchmark + tests)
-└── docs/                detailed guide, competitor analysis, screenshots, test results
+│
+├── web/
+│   ├── src/
+│   │   ├── app/          # Main application
+│   │   ├── core/         # Camera, optics, target and telemetry logic
+│   │   ├── engine/       # Browser simulation workers
+│   │   ├── hud/          # Sensor panel and interface overlays
+│   │   ├── scene/        # 3D environment and models
+│   │   ├── services/     # Engine/provider integration
+│   │   └── state/        # Application state
+│   ├── package.json
+│   └── vercel.json
+│
+├── server/
+│   ├── app/              # FastAPI application
+│   ├── astraq_engine/    # Python simulation modules
+│   ├── scripts/          # Batch and benchmark scripts
+│   └── tests/            # Backend tests
+│
+├── desktop/              # Desktop wrapper
+└── render.yaml           # Optional backend deployment configuration
 ```
 
 ## 📚 Documentation
@@ -255,8 +250,12 @@ The link budget and acquisition-probability panels are simplified models and are
 
 | Name | Role |
 |---|---|
-| *Your name* | *Role* |
-| *Teammate* | *Role* |
+| *Rangala Nithin* | *Technical lead & SimulationArchitecture* |
+| *Moses Gunaseelan* | *Vision,tracking& Control & Lead* |
+| *Sri Dharshan* | *3D Scene & UI Support* |
+| *Sai Yogesh* | *Sensor Panel & Telemetry* |
+| *Yogesh Subramani* | *Testing & Validation* |
+| *Ponpriyadharshni* | *Documentation & Demo* |
 
 <div align="center">
 <sub>Built for Smart India Hackathon 2026 · SIH26169 · Coastline data © Natural Earth (public domain)</sub>
