@@ -255,7 +255,7 @@ The link budget and acquisition-probability panels are simplified models and are
 | *Sri Dharshan* | *3D Scene & UI Support* |
 | *Sai Yogesh* | *Sensor Panel & Telemetry* |
 | *Yogesh Subramani* | *Testing & Validation* |
-| *Ponpriyadharshni* | *Documentation & Demo* |
+| *Pon Priyadharshni* | *Documentation & Demo* |
 
 <div align="center">
 <sub>Built for Smart India Hackathon 2026 · SIH26169 · Coastline data © Natural Earth (public domain)</sub>
